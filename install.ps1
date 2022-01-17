@@ -321,11 +321,11 @@ git config --global user.name $name
 git config --global core.autocrlf true
 
 Write-Host "Linking back windows terminal configuration file..." -ForegroundColor Green
-$wtConfigPath = "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-$onedriveConfigwt = "$OneDrivePath\Storage\WT\settings.json"
-$_ = Get-Content $onedriveConfigwt # Ensure file is available.
-cmd /c "del `"$wtConfigPath`""
-cmd /c "mklink `"$wtConfigPath`" `"$onedriveConfigwt`""
+#$wtConfigPath = "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+#$onedriveConfigwt = "$OneDrivePath\Storage\WT\settings.json"
+#$_ = Get-Content $onedriveConfigwt # Ensure file is available.
+#cmd /c "del `"$wtConfigPath`""
+#cmd /c "mklink `"$wtConfigPath`" `"$onedriveConfigwt`""
 
 Write-Host "Configuring windows terminal context menu..." -ForegroundColor Green
 git clone https://github.com/lextm/windowsterminal-shell.git "$HOME\temp"
@@ -409,12 +409,12 @@ cmd.exe /c "reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Hide
 cmd.exe /c "reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu /v {F02C1A0D-BE21-4350-88B0-7367FC96EF3C} /t REG_DWORD /d 0 /f"
 cmd.exe /c "reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel /v {F02C1A0D-BE21-4350-88B0-7367FC96EF3C} /t REG_DWORD /d 0 /f"
 
-$wallpaper = "$OneDrivePath\Digital\Wallpapers\Dark.jpg"
-if (Test-Path $wallpaper) {
-    Write-Host "Setting wallpaper to $wallpaper..." -ForegroundColor Green
-    Set-WallPaper -Image $wallpaper
-    Write-Host "Set to: " (Get-Item "$OneDrivePath\Digital\Wallpapers\Dark.jpg").Name
-}
+#$wallpaper = "$OneDrivePath\Digital\Wallpapers\Dark.jpg"
+#if (Test-Path $wallpaper) {
+ #   Write-Host "Setting wallpaper to $wallpaper..." -ForegroundColor Green
+  #  Set-WallPaper -Image $wallpaper
+   # Write-Host "Set to: " (Get-Item "$OneDrivePath\Digital\Wallpapers\Dark.jpg").Name
+#}
 
 Write-Host "Disable Sleep on AC Power..." -ForegroundColor Green
 Powercfg /Change monitor-timeout-ac 20
