@@ -9,7 +9,7 @@ The following command will re-install Windows 10\11\insider for you.
 Right click the start button, click `Windows PowerShell(Admin)`.
 
 ```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/Anduin2017/configuration-script-win/raw/main/Reimage.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/yongzheng9405/configuration-script-win/raw/main/Reimage.ps1'))
 ```
 
 ![image](https://user-images.githubusercontent.com/19531547/145162782-3e15f780-a1ee-4665-8af8-0d3b85ff103a.png)
@@ -22,7 +22,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/Anduin
 In China? There is a proxy for China network which bypass the firewall.
 
 ```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://githubcontent.aiurs.co/Anduin2017/configuration-script-win/main/Reimage.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://githubcontent.aiurs.co/yongzheng9405/configuration-script-win/main/Reimage.ps1'))
 ```
 
 
@@ -49,10 +49,10 @@ For example:
 
 Right click the start button, click `Windows PowerShell(Admin)`.
 
-[Edit now](https://github.com/Anduin2017/configuration-script-win/edit/main/install.ps1)
+[Edit now](https://github.com/yongzheng9405/configuration-script-win/edit/main/install.ps1)
 
 ```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/Anduin2017/configuration-script-win/raw/main/install.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/yongzheng9405/configuration-script-win/raw/main/install.ps1'))
 ```
 
 **Caution: DO NOT RUN this in Windows Terminal!!! Instead, start a pure PowerShell with admin instead!**
